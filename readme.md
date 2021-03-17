@@ -1,10 +1,10 @@
-# COVID-19 DASHBOARD
+# GYM ANNOUNCEMENT APP
 
 A small app for my gym
 
 DEMO: https://zen-morse-5347ad.netlify.app/
 
-![alt text](https://raw.githubusercontent.com/sanoylab/gym-announcement/master/screenshot.png)
+![alt text](https://raw.githubusercontent.com/sanoylab/gym-announcement/master/screenshot.PNG)
 
 ## Contributing
 
