@@ -66,6 +66,12 @@ function getExactTime() {
   workoutEnd.innerHTML = `${hours < 10 ? "0" : ""}${hour12}:55 ${
     pm ? "pm" : "am"
   }`;
+  if (minute >= 55 && minute <= 60) {
+    document.querySelector(".info").style.visibility = "hidden";
+    // document.getElementsByClassName('info').style.visibility = 'hidden';
+  } else {
+    document.querySelector(".info").style.visibility = "visible";
+  }
 }
 function checkMinutes() {
   var now = new Date().getMinutes();
