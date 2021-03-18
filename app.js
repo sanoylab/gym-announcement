@@ -96,44 +96,39 @@ function checkMinutes() {
     if (minute === 53) {
       for (var i = 0; i <= 1; i++) {
         responsiveVoice.speak(
-          `Members you have 2 minutes left for your workout. Please be at the gate at ${hour12}:'55' ${
+          `Attention Members there is 2 minutes remaining for your workout. Please head to the front exit at ${hour12}:'55' ${
             pm ? "pm" : "am"
           }`
         );
       }
     } else if (minute === 50) {
       responsiveVoice.speak(
-        `Members you have 5 minutes left for your workout. Please be at the gate at ${hour12}:'55' ${
-          pm ? "pm" : "am"
-        }`
-      );
-      responsiveVoice.speak(
-        `Members you have 5 minutes left for your workout. Please be at the gate at ${hour12}:'55' ${
+        `Attention Members there is 5 minutes remaining for your workout. Please head to the front exit at ${hour12}:'55' ${
           pm ? "pm" : "am"
         }`
       );
     } else if (minute === 45) {
       responsiveVoice.speak(
-        `Members you have 10 minutes left for your workout. Please be at the gate at ${hour12}:'55' ${
+        `Attention Members there is 10 minutes remaining for your workout. Please head to the front exit at ${hour12}:'55' ${
           pm ? "pm" : "am"
         }`
       );
     } else if (minute === 40) {
       responsiveVoice.speak(
-        `Members you have 15 minutes left for your workout. Please be at the gate at ${hour12}:'55' ${
+        `Attention Members there is 15 minutes remaining for your workout. Please head to the front exit at ${hour12}:'55' ${
           pm ? "pm" : "am"
         }`
       );
     } else if (minute === 35) {
       responsiveVoice.speak(
-        `Members you have 20 minutes left for your workout. Please be at the gate at ${hour12}:'55' ${
+        `Attention Members there is 20 minutes remaining for your workout. Please head to the front exit at ${hour12}:'55' ${
           pm ? "pm" : "am"
         }`
       );
     } else if (minute === 56) {
       for (var i = 0; i <= 2; i++) {
         responsiveVoice.speak(
-          `Attention members Your workout is over Please head to the gate Thank You`
+          `Attention members Your workout is over now Please head to the front exit Thank You`
         );
       }
     }
