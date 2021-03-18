@@ -1,6 +1,6 @@
 # GYM ANNOUNCEMENT APP
 
-A small app for my gym
+A small app for my gym (Web + Desktop - Electon app)
 
 DEMO: https://zen-morse-5347ad.netlify.app/
 
