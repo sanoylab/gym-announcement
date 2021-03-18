@@ -66,12 +66,15 @@ function getExactTime() {
   workoutEnd.innerHTML = `${hours < 10 ? "0" : ""}${hour12}:55 ${
     pm ? "pm" : "am"
   }`;
-  if (minute >= 55 && minute <= 60) {
-    document.querySelector(".info").style.visibility = "hidden";
-    // document.getElementsByClassName('info').style.visibility = 'hidden';
-  } else {
-    document.querySelector(".info").style.visibility = "visible";
-  }
+
+  setInterval(() => {
+    if (minute >= 55 && minute <= 60) {
+      document.querySelector(".info").style.visibility = "hidden";
+      // document.getElementsByClassName('info').style.visibility = 'hidden';
+    } else {
+      document.querySelector(".info").style.visibility = "visible";
+    }
+  }, 1000);
 }
 function checkMinutes() {
   var now = new Date().getMinutes();
@@ -90,7 +93,7 @@ function checkMinutes() {
     let minLeftDOM = document.querySelector("#time-left");
 
     console.log(minute);
-    if (minute === 25) {
+    if (minute === 53) {
       for (var i = 0; i <= 1; i++) {
         responsiveVoice.speak(
           `Members you have 2 minutes left for your workout. Please be at the gate at ${hour12}:'55' ${
