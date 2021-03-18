@@ -131,9 +131,11 @@ function checkMinutes() {
         }`
       );
     } else if (minute === 56) {
-      responsiveVoice.speak(
-        `Attention members Your workout is over Please head to the gate Thank You`
-      );
+      for (var i = 0; i <= 2; i++) {
+        responsiveVoice.speak(
+          `Attention members Your workout is over Please head to the gate Thank You`
+        );
+      }
     }
 
     console.log(`${hour12}:${minute} ${pm ? "pm" : "am"}`);
